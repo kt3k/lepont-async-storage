@@ -2,7 +2,8 @@
   "name": "@lepont/async-storage",
   "version": "0.1.0",
   "description": "Async Storage Bridge for lepont",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
   "files": [
     "dist",
     "types"
