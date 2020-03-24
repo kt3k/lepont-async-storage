@@ -16,7 +16,7 @@ npm i --save @lepont/async-storage
 
 React Native side:
 
-```
+```ts
 import { useRegistry } from 'lepont'
 import { WebView } from 'react-native-webview'
 import { useAsyncStorage } from '@lepont/async-storage/bridge'
@@ -37,7 +37,7 @@ const App = () => {
 
 Browser side:
 
-```
+```ts
 import { setItem, getItem } from '@lepont/async-storage'
 
 await setItem('@storage_Key', 'stored value')
