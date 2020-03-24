@@ -8,6 +8,7 @@
     "types"
   ],
   "scripts": {
+    "fmt": "prettier --write bridge src *.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "tsc -p ."
   },
@@ -33,6 +34,7 @@
     "@react-native-community/async-storage": "^1.8.1",
     "@types/node": "^13.9.3",
     "lepont": "^0.8.3",
+    "prettier": "^2.0.2",
     "typescript": "^3.8.3"
   }
 }

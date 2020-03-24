@@ -17,6 +17,11 @@ lepont@^0.8.3:
   resolved "https://registry.yarnpkg.com/lepont/-/lepont-0.8.3.tgz#6d28a57337671dc1dab7124455130872b6103f9d"
   integrity sha512-X0KIUTggo76hZfpsooJiGeZX8DoJ53vB97b2VkPqq39MZZ2eZHtUrXVF/RXmbj3QdDvzt0M+mO3ZO/nfBht2ug==
 
+prettier@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.2.tgz#1ba8f3eb92231e769b7fcd7cb73ae1b6b74ade08"
+  integrity sha512-5xJQIPT8BraI7ZnaDwSbu5zLrB6vvi8hVV58yHQ+QK64qrY40dULy0HSRlQ2/2IdzeBpjhDkqdcFBnFeDEMVdg==
+
 typescript@^3.8.3:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"

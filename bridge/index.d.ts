@@ -1,3 +1,3 @@
-import { useAsyncStorage } from '../types/bridge';
+import { useAsyncStorage } from '../types/bridge'
 
-export { useAsyncStorage };
+export { useAsyncStorage }
