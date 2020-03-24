@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "description": "Async Storage Bridge for lepont",
   "main": "index.js",
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -19,5 +24,15 @@
   "bugs": {
     "url": "https://github.com/kt3k/lepont-async-storage/issues"
   },
-  "homepage": "https://github.com/kt3k/lepont-async-storage#readme"
+  "homepage": "https://github.com/kt3k/lepont-async-storage#readme",
+  "peerDependencies": {
+    "@react-native-community/async-storage": ">=1.8.1",
+    "lepont": ">=0.8.3"
+  },
+  "devDependencies": {
+    "@react-native-community/async-storage": "^1.8.1",
+    "@types/node": "^13.9.3",
+    "lepont": "^0.8.3",
+    "typescript": "^3.8.3"
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "target": "ES2017",
+    "outDir": "./dist",
+    "declarationDir": "./types",
+    "declaration": true
+  },
+  "files": [
+    "src/index.ts",
+    "src/bridge.ts",
+    "src/shared.ts"
+  ]
+}
