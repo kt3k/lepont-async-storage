@@ -9,8 +9,8 @@ export async function setItem(key: string, value: unknown): Promise<void> {
     type: MSG_TYPE_SET_ITEM,
     payload: {
       key,
-      value: JSON.stringify(value)
-    }
+      value: JSON.stringify(value),
+    },
   })
 }
 
@@ -20,7 +20,7 @@ export async function setItem(key: string, value: unknown): Promise<void> {
 export async function getItem(key: string): Promise<any> {
   const json = await sendMessage<string>({
     type: MSG_TYPE_GET_ITEM,
-    payload: { key }
+    payload: { key },
   })
 
   return JSON.parse(json)
