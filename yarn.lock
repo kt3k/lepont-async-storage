@@ -12,10 +12,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.3.tgz#6356df2647de9eac569f9a52eda3480fa9e70b4d"
   integrity sha512-01s+ac4qerwd6RHD+mVbOEsraDHSgUaefQlEdBbUolnQFjKwCr7luvAlEwW1RFojh67u0z4OUTjPn9LEl4zIkA==
 
-lepont@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/lepont/-/lepont-0.8.3.tgz#6d28a57337671dc1dab7124455130872b6103f9d"
-  integrity sha512-X0KIUTggo76hZfpsooJiGeZX8DoJ53vB97b2VkPqq39MZZ2eZHtUrXVF/RXmbj3QdDvzt0M+mO3ZO/nfBht2ug==
+lepont@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/lepont/-/lepont-0.9.0.tgz#02f90189228762396b991122cad80961b9003c61"
+  integrity sha512-DKZwZTsJQSzxu/acp+gjREQ5RV/aXoGcm8Lj0G0ulbzRsPc16GuT4axExpziD3d1oagnfTnmS91DFdph2r4zUw==
 
 prettier@^2.0.2:
   version "2.0.2"

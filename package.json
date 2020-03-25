@@ -29,12 +29,12 @@
   "homepage": "https://github.com/kt3k/lepont-async-storage#readme",
   "peerDependencies": {
     "@react-native-community/async-storage": ">=1.8.1",
-    "lepont": ">=0.8.3"
+    "lepont": ">=0.9.0"
   },
   "devDependencies": {
     "@react-native-community/async-storage": "^1.8.1",
     "@types/node": "^13.9.3",
-    "lepont": "^0.8.3",
+    "lepont": "^0.9.0",
     "prettier": "^2.0.2",
     "typescript": "^3.8.3"
   }
