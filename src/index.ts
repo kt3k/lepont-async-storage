@@ -23,5 +23,13 @@ export async function getItem(key: string): Promise<any> {
     payload: { key },
   })
 
-  return JSON.parse(json)
+  if (!json) {
+    return null
+  }
+
+  try {
+    return JSON.parse(json)
+  } finally {
+    return null
+  }
 }
