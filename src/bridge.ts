@@ -11,10 +11,7 @@ type AsyncStorage = {
   getItem: (k: string) => Promise<string>
 }
 
-export function useAsyncStorage(
-  registry: Registry,
-  s: AsyncStorage
-) {
+export function useAsyncStorage(registry: Registry, s: AsyncStorage) {
   useBridge(
     registry,
     MSG_TYPE_SET_ITEM,
