@@ -10,9 +10,7 @@
   ],
   "scripts": {
     "fmt": "prettier --write bridge src *.json",
-    "test": "npm run test:rn && npm run test:browser",
-    "test:rn": "jest --coverage -c jest.rn.config.js src/bridge.test.ts",
-    "test:browser": "jest --coverage -c jest.config.js src/index.test.ts",
+    "test": "jest --coverage",
     "dist": "tsc -p ."
   },
   "repository": {
@@ -30,7 +28,6 @@
   },
   "homepage": "https://github.com/kt3k/lepont-async-storage#readme",
   "peerDependencies": {
-    "@react-native-community/async-storage": ">=1.8.1",
     "lepont": ">=0.10.1"
   },
   "devDependencies": {

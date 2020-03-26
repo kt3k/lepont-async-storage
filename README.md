@@ -21,10 +21,11 @@ import React from 'react'
 import { useRegistry } from 'lepont'
 import { WebView } from 'react-native-webview'
 import { useAsyncStorage } from '@lepont/async-storage/bridge'
+import AsyncStorage from '@react-native-community/async-storage'
 
 const App = () => {
   const registry = useRegistry()
-  useAsyncStorage(registry)
+  useAsyncStorage(registry, AsyncStorage)
   return (
     <WebView
       source={{ uri: 'Web.bundle/index.html' }}

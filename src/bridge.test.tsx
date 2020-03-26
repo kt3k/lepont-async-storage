@@ -7,10 +7,10 @@ import { MSG_TYPE_SET_ITEM, MSG_TYPE_GET_ITEM } from './shared'
 const useApp = () => {
   const registry = useRegistry()
   useAsyncStorage(registry, {
-    getItem() {
+    async getItem() {
       return '{"a":1}'
     },
-    setItem() {},
+    async setItem() {},
   })
   return registry
 }
