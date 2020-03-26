@@ -42,8 +42,8 @@ Browser side:
 ```ts
 import { setItem, getItem } from '@lepont/async-storage'
 
-await setItem('@storage_Key', 'stored value')
-await getItem('@storage_Key')
+await setItem('@storage_Key', { my: 'value' })
+await getItem('@storage_Key') // => { my: 'value' }
 ```
 
 # LICENSE
