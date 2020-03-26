@@ -6,6 +6,8 @@
   "types": "./types/index.d.ts",
   "files": [
     "dist",
+    "mock",
+    "bridge",
     "types"
   ],
   "scripts": {

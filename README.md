@@ -1,4 +1,4 @@
-# @lepont/async-storage
+# @lepont/async-storage v0.1.0
 
 > Async Storage Bridge for [lepont][]
 
