@@ -1,5 +1,8 @@
 # @lepont/async-storage v0.1.0
 
+![ci](https://github.com/kt3k/lepont-async-storage/workflows/ci/badge.svg)
+[![codecov](https://codecov.io/gh/kt3k/lepont-async-storage/branch/master/graph/badge.svg)](https://codecov.io/gh/kt3k/lepont-async-storage)
+
 > Async Storage Bridge for [lepont][]
 
 You can use [AsyncStorage][] through [lepont][].
