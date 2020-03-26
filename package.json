@@ -10,7 +10,9 @@
   ],
   "scripts": {
     "fmt": "prettier --write bridge src *.json",
-    "test": "jest",
+    "test": "npm run test:rn && npm run test:browser",
+    "test:rn": "jest --coverage -c jest.rn.config.js src/bridge.test.ts",
+    "test:browser": "jest --coverage -c jest.config.js src/index.test.ts",
     "dist": "tsc -p ."
   },
   "repository": {
@@ -33,11 +35,15 @@
   },
   "devDependencies": {
     "@react-native-community/async-storage": "^1.8.1",
+    "@testing-library/react-hooks": "^3.2.1",
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.3",
     "jest": "^25.2.1",
     "lepont": "^0.10.1",
+    "metro-react-native-babel-preset": "^0.59.0",
     "prettier": "^2.0.2",
+    "react": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   }

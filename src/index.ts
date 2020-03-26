@@ -5,7 +5,7 @@ import { MSG_TYPE_GET_ITEM, MSG_TYPE_SET_ITEM } from './shared'
  * Sets the item to the async storage.
  */
 export async function setItem(key: string, value: unknown): Promise<void> {
-  await sendMessage<void, { key: string, value: unknown }>({
+  await sendMessage<void, { key: string; value: unknown }>({
     type: MSG_TYPE_SET_ITEM,
     payload: {
       key,

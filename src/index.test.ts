@@ -53,7 +53,7 @@ describe('getItem', () => {
         message: {
           type: MSG_TYPE_GET_ITEM,
           payload: {
-            key: 'key'
+            key: 'key',
           },
         },
       })
