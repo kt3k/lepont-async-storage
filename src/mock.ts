@@ -17,7 +17,7 @@ export async function getItem(key: string): Promise<any> {
 
   try {
     return JSON.parse(json)
-  } finally {
+  } catch (e) {
     return null
   }
 }
