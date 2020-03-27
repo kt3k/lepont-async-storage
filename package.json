@@ -35,13 +35,11 @@
     "lepont": ">=0.10.1"
   },
   "devDependencies": {
-    "@react-native-community/async-storage": "^1.8.1",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.3",
     "jest": "^25.2.1",
     "lepont": "^0.10.1",
-    "metro-react-native-babel-preset": "^0.59.0",
     "prettier": "^2.0.2",
     "react": "^16.13.1",
     "react-test-renderer": "^16.13.1",
