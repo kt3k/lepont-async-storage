@@ -7,5 +7,5 @@
     "declarationDir": "./types",
     "declaration": true
   },
-  "files": ["src/index.ts", "src/bridge.ts", "src/shared.ts"]
+  "files": ["src/index.ts", "src/bridge.ts", "src/shared.ts", "src/mock.ts"]
 }
