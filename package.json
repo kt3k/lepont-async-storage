@@ -11,8 +11,10 @@
     "types"
   ],
   "scripts": {
+    "clean": "rimraf types dist coverage",
     "fmt": "prettier --write bridge src *.json",
     "test": "jest --coverage",
+    "prepublishOnly": "npm run clean && npm run dist",
     "dist": "tsc -p ."
   },
   "repository": {
@@ -43,6 +45,7 @@
     "prettier": "^2.0.2",
     "react": "^16.13.1",
     "react-test-renderer": "^16.13.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   }
