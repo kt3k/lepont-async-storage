@@ -4,8 +4,8 @@ import { MSG_TYPE_GET_ITEM, MSG_TYPE_SET_ITEM } from './shared'
 /**
  * Sets the item to the async storage.
  */
-export async function setItem(key: string, value: unknown): Promise<void> {
-  await sendMessage<void, { key: string; value: unknown }>({
+export async function setItem<T>(key: string, value: T): Promise<void> {
+  await sendMessage<void, { key: string; value: T }>({
     type: MSG_TYPE_SET_ITEM,
     payload: {
       key,
@@ -17,8 +17,8 @@ export async function setItem(key: string, value: unknown): Promise<void> {
 /**
  * Gets the item from the async storage.
  */
-export async function getItem(key: string): Promise<any> {
-  const json = await sendMessage<string, { key: string }>({
+export async function getItem<T>(key: string): Promise<T | null> {
+  const json = await sendMessage<T, { key: string }>({
     type: MSG_TYPE_GET_ITEM,
     payload: { key },
   })
