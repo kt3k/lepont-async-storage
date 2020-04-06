@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useAsyncStorage } from './bridge'
 import { useRegistry } from 'lepont'
-import { renderHook, act } from '@testing-library/react-hooks'
+import { renderHook } from '@testing-library/react-hooks'
 import { MSG_TYPE_SET_ITEM, MSG_TYPE_GET_ITEM } from './shared'
 
 const useApp = () => {
