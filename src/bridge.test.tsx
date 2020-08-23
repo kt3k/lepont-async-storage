@@ -14,7 +14,7 @@ const useApp = () =>
     })
   )
 
-describe('useAsyncStorage', () => {
+describe('AsyncStorageBridge', () => {
   it('registers setItem bridge', async () => {
     const {
       result: {
