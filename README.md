@@ -17,7 +17,7 @@ npm i --save lepont @react-native-community/async-storage @lepont/async-storage
 
 React Native side:
 
-```ts
+```tsx
 import React from 'react'
 import { useBridge } from 'lepont'
 import { WebView } from 'react-native-webview'
