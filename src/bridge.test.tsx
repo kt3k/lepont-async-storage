@@ -1,26 +1,29 @@
 import * as React from 'react'
-import { useAsyncStorage } from './bridge'
-import { useRegistry } from 'lepont'
+import { AsyncStorageBridge } from './bridge'
+import { useBridge } from 'lepont'
 import { renderHook } from '@testing-library/react-hooks'
 import { MSG_TYPE_SET_ITEM, MSG_TYPE_GET_ITEM } from './shared'
 
-const useApp = () => {
-  const registry = useRegistry()
-  useAsyncStorage(registry, {
-    async getItem() {
-      return '{"a":1}'
-    },
-    async setItem() {},
-  })
-  return registry
-}
+const useApp = () =>
+  useBridge(
+    AsyncStorageBridge({
+      async getItem() {
+        return '{"a":1}'
+      },
+      async setItem() {},
+    })
+  )
 
 describe('useAsyncStorage', () => {
   it('registers setItem bridge', async () => {
-    const { result } = renderHook(() => useApp())
+    const {
+      result: {
+        current: [ref, onMessage],
+      },
+    } = renderHook(() => useApp())
     const webView = { injectJavaScript: jest.fn() }
-    result.current.ref(webView)
-    await result.current.onMessage({
+    ref(webView)
+    await onMessage({
       nativeEvent: {
         data: JSON.stringify({
           id: 1,
@@ -44,10 +47,14 @@ describe('useAsyncStorage', () => {
   })
 
   it('registers getItem bridge', async () => {
-    const { result } = renderHook(() => useApp())
+    const {
+      result: {
+        current: [ref, onMessage],
+      },
+    } = renderHook(() => useApp())
     const webView = { injectJavaScript: jest.fn() }
-    result.current.ref(webView)
-    await result.current.onMessage({
+    ref(webView)
+    await onMessage({
       nativeEvent: {
         data: JSON.stringify({
           id: 1,

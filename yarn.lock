@@ -2188,10 +2188,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-lepont@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/lepont/-/lepont-0.10.1.tgz#1854cb1c6c1dec059763f41d0888a24098e52e31"
-  integrity sha512-+BU/uqhNTIREw3b+iA9ra3dWD39nfNHQpRUOnfIMCfOVhQpI0jTHqXR8apz6anTnXVAyLs39go0Rz4ZtA/OxTQ==
+lepont@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/lepont/-/lepont-0.11.1.tgz#16ba7e22057bd06ad315c9f5d2abe371d242a351"
+  integrity sha512-1X9+92bLJXCBvTeFtRAVXx/PBp+iUt7FzqFuaNIGJBlwy7OdGZZ2w8v4kFjo/O5WtMg2rWpsWvFp/Ue+uzlXtw==
 
 leven@^3.1.0:
   version "3.1.0"

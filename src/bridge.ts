@@ -11,16 +11,14 @@ type AsyncStorage = {
   getItem: (k: string) => Promise<string>
 }
 
-export function useAsyncStorage(registry: Registry, s: AsyncStorage) {
-  useBridge(
-    registry,
+export const AsyncStorageBridge = (s: AsyncStorage) => (registry: Registry) => {
+  registry.register(
     MSG_TYPE_SET_ITEM,
     async (p: SetPayload, _: Bridge): Promise<void> => {
       await s.setItem(p.key, JSON.stringify(p.value))
     }
   )
-  useBridge(
-    registry,
+  registry.register(
     MSG_TYPE_GET_ITEM,
     async (p: GetPayload, _: Bridge): Promise<string | null> => {
       const json = await s.getItem(p.key)
