@@ -10,9 +10,7 @@ You can use [AsyncStorage][] through [lepont][].
 # Install
 
 ```
-npm i --save lepont
-npm i --save @react-native-community/async-storage
-npm i --save @lepont/async-storage
+npm i --save lepont @react-native-community/async-storage @lepont/async-storage
 ```
 
 # Usage
@@ -21,20 +19,20 @@ React Native side:
 
 ```ts
 import React from 'react'
-import { useRegistry } from 'lepont'
+import { useBridge } from 'lepont'
 import { WebView } from 'react-native-webview'
-import { useAsyncStorage } from '@lepont/async-storage/bridge'
+import { AsyncStorageBridge } from '@lepont/async-storage/bridge'
 import AsyncStorage from '@react-native-community/async-storage'
 
 const App = () => {
-  const registry = useRegistry()
-  useAsyncStorage(registry, AsyncStorage)
+  const [ref, onMessage] = useRegistry(AsyncStorageBridge(AsyncStorage))
+
   return (
     <WebView
       source={{ uri: 'Web.bundle/index.html' }}
       javaScriptEnabled={true}
-      ref={registry.ref}
-      onMessage={registry.onMessage}
+      ref={ref}
+      onMessage={onMessage}
     />
   )
 }
