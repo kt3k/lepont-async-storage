@@ -1,4 +1,4 @@
-# @lepont/async-storage v0.4.1
+# @lepont/async-storage v0.4.2
 
 ![ci](https://github.com/kt3k/lepont-async-storage/workflows/ci/badge.svg)
 [![codecov](https://codecov.io/gh/kt3k/lepont-async-storage/branch/master/graph/badge.svg)](https://codecov.io/gh/kt3k/lepont-async-storage)
